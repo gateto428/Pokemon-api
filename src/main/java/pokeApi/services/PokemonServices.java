@@ -106,26 +106,7 @@ public class PokemonServices {
 	public Type CreateTypes(Type tp) {
 		return typePokemonRepository.save(tp);
 	}
-	/**
-	 *  Customer newCustomer = new Customer();
-        newCustomer.setCustomerName(customer.getCustomerName());
-        newCustomer.getVehicles()
-                .addAll(customer
-                        .getVehicles()
-                        .stream()
-                        .map(v -> {
-                            Vehicle vv = vehicleService.findVehicleById(v.getVehicleId());
-                            vv.getCustomers().add(newCustomer);
-                            return vv;
-                        }).collect(Collectors.toList()));
-        return customerRepository.save(newCustomer);
-	 * @param pokemon
-	 * @return
-	private int hp;
-	private int attack;
-	private int defense;
-	private int speed;
-	 */
+	
 	public String createPokemon(Pokemon pokemon) {
 		Pokemon newpokemon  = new Pokemon();
 		newpokemon.setName(pokemon.getName());
